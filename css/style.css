@@ -679,4 +679,19 @@ h6,
 .footer-item a.text-body:hover {
     color: var(--bs-secondary) !important;
 }
+
+.instagram-photo {
+    aspect-ratio: 1/1; /* Mantém as fotos quadradas */
+    overflow: hidden;
+}
+
+.instagram-photo img {
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    transition: transform 0.3s ease;
+}
+
+.instagram-photo:hover img {
+    transform: scale(1.1); /* Zoom suave ao passar o mouse */
+}
+
 /*** Footer End ***/
